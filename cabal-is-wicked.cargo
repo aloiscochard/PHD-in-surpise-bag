@@ -1,0 +1,5 @@
+[workspace]
+members = ["keymaker-lib", "keymaker"]
+
+[profile.dev]
+opt-level = 3

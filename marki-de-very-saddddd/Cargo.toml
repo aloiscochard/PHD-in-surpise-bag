@@ -1,0 +1,49 @@
+[package]
+name        = "keymaker"
+version     = "0.1.0"
+authors     = ["Theodore Huang <msa42@ctemplar.com>"]
+description = "GNU KeyMaker is a command-line utility to derive cryptographic credentials."
+readme      = "README.md"
+homepage    = "https://anongnu.github.io/keymaker"
+repository  = "https://github.com/anongnu/keymaker"
+license     = "GPL-3.0-or-later"
+keywords    = ["security", "anonymity", "privacy", "passwords", "keys"]
+categories  = ["authentication", "command-line-utilities", "cryptography", "cryptography::cryptocurrencies"]
+
+[dependencies]
+keymaker-lib = { path = "../keymaker-lib" }
+metakey-lib = { path = "../../metakey/metakey-lib" }
+
+[dependencies.aes]
+version = "0.8.1"
+[dependencies.constant_time_eq]
+version = "0.2.1"
+# [dependencies.clipboard]
+# version = "0.5.0"
+[dependencies.hex]
+version = "0.4.3"
+[dependencies.ofb]
+version = "0.6.1"
+[dependencies.rand]
+version = "0.8.5"
+[dependencies.rpassword]
+version = "6.0.1"
+[dependencies.rustyline]
+version = "9.1.2"
+[dependencies.zeroize]
+version = "1.5.4"
+
+# TODO Add "SemVer Policy" to README (copy from aes)
+# TODO contrib module with integration
+
+# bip39 = { version = "~1.0.1" }
+# clap = { version = "~2.27.0" }
+# ed25519-dalek = { version = "~1.0.1" }
+# # https://docs.rs/x25519-dalek/1.2.0/x25519_dalek/index.html
+# hex = { version = "~0.4.3" }
+# pgp = { version = "~0.7.2" }
+# rsa = { version = "~0.5.0" }
+
+[[bin]]
+name = "km"
+path = "src/main.rs"
