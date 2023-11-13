@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/user/keymaker/target/debug/build/typenum-ad1b64fb9a024026/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/user/keymaker/target/debug/build/typenum-ad1b64fb9a024026/out/op.rs
